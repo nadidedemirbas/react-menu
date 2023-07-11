@@ -56,7 +56,7 @@ a {
 }
 
 .button:hover {
-  color: deeppink;
+  color: deeppink !important;
   cursor: pointer;
 }
 
