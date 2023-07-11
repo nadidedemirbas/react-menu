@@ -53,13 +53,13 @@ export default function Menu() {
                     <div>
                         <div>
                             <span className={'subtitle'}>Giyim</span>
-                            <Link to={'/tekstil/elbise'}><span className={'button'}>Elbise</span></Link>
-                            <Link to={'/tekstil/tisort'}><span className={'button'}>Tişört</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/tekstil/elbise'}><span className={'button'}>Elbise</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/tekstil/tisort'}><span className={'button'}>Tişört</span></Link>
                         </div>
                         <div>
                             <span className={'subtitle'}>Ayakkabı</span>
-                            <Link to={'/tekstil/topuklu-ayakkabi'}><span className={'button'}>Topuklu Ayakkabı</span></Link>
-                            <Link to={'/tekstil/sneaker'}><span className={'button'}>Sneaker</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/tekstil/topuklu-ayakkabi'}><span className={'button'}>Topuklu Ayakkabı</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/tekstil/sneaker'}><span className={'button'}>Sneaker</span></Link>
                         </div>
                     </div>
                     <div>
@@ -70,13 +70,13 @@ export default function Menu() {
                     <div>
                         <div>
                             <span className={'subtitle'}>Bilgisayar</span>
-                            <Link to={'/elektronik/masaustu'}><span className={'button'}>Masaüstü</span></Link>
-                            <Link to={'/elektronik/dizustu'}><span className={'button'}>Dizüstü</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/elektronik/masaustu'}><span className={'button'}>Masaüstü</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/elektronik/dizustu'}><span className={'button'}>Dizüstü</span></Link>
                         </div>
                         <div>
                             <span className={'subtitle'}>Telefon</span>
-                            <Link to={'/elektronik/apple'}><span className={'button'}>Apple</span></Link>
-                            <Link to={'/elektronik/android'}><span className={'button'}>Android</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/elektronik/apple'}><span className={'button'}>Apple</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/elektronik/android'}><span className={'button'}>Android</span></Link>
                         </div>
                     </div>
                     <div>
@@ -87,13 +87,13 @@ export default function Menu() {
                     <div>
                         <div>
                             <span className={'subtitle'}>Makyaj</span>
-                            <Link to={'/kozmetik/goz-makyaji'}><span className={'button'}>Göz Makyajı</span></Link>
-                            <Link to={'/kozmetik/ten-makyaji'}><span className={'button'}>Ten Makyajı</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/kozmetik/goz-makyaji'}><span className={'button'}>Göz Makyajı</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/kozmetik/ten-makyaji'}><span className={'button'}>Ten Makyajı</span></Link>
                         </div>
                         <div>
                             <span className={'subtitle'}>Saç Bakımı</span>
-                            <Link to={'/kozmetik/sampuan'}><span className={'button'}>Şampuan</span></Link>
-                            <Link to={'/kozmetik/sac-kremi'}><span className={'button'}>Saç Kremi</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/kozmetik/sampuan'}><span className={'button'}>Şampuan</span></Link>
+                            <Link onClick={() => hideAllTabs()} to={'/kozmetik/sac-kremi'}><span className={'button'}>Saç Kremi</span></Link>
                         </div>
                     </div>
                     <div>
