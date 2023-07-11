@@ -1,3 +1,5 @@
+import { Outlet, Link } from 'react-router-dom'
+
 export default function Menu() {
 
     let currentTab = null;
@@ -51,13 +53,13 @@ export default function Menu() {
                     <div>
                         <div>
                             <span className={'subtitle'}>Giyim</span>
-                            <span className={'button'}>Elbise</span>
-                            <span className={'button'}>Tişört</span>
+                            <Link to={'/tekstil/elbise'}><span className={'button'}>Elbise</span></Link>
+                            <Link to={'/tekstil/tisort'}><span className={'button'}>Tişört</span></Link>
                         </div>
                         <div>
                             <span className={'subtitle'}>Ayakkabı</span>
-                            <span className={'button'}>Topuklu Ayakkabı</span>
-                            <span className={'button'}>Sneaker</span>
+                            <Link to={'/tekstil/topuklu-ayakkabi'}><span className={'button'}>Topuklu Ayakkabı</span></Link>
+                            <Link to={'/tekstil/sneaker'}><span className={'button'}>Sneaker</span></Link>
                         </div>
                     </div>
                     <div>
@@ -68,13 +70,13 @@ export default function Menu() {
                     <div>
                         <div>
                             <span className={'subtitle'}>Bilgisayar</span>
-                            <span className={'button'}>Masaüstü</span>
-                            <span className={'button'}>Dizüstü</span>
+                            <Link to={'/elektronik/masaustu'}><span className={'button'}>Masaüstü</span></Link>
+                            <Link to={'/elektronik/dizustu'}><span className={'button'}>Dizüstü</span></Link>
                         </div>
                         <div>
                             <span className={'subtitle'}>Telefon</span>
-                            <span className={'button'}>Apple</span>
-                            <span className={'button'}>Android</span>
+                            <Link to={'/elektronik/apple'}><span className={'button'}>Apple</span></Link>
+                            <Link to={'/elektronik/android'}><span className={'button'}>Android</span></Link>
                         </div>
                     </div>
                     <div>
@@ -85,19 +87,22 @@ export default function Menu() {
                     <div>
                         <div>
                             <span className={'subtitle'}>Makyaj</span>
-                            <span className={'button'}>Göz Makyajı</span>
-                            <span className={'button'}>Ten Makyajı</span>
+                            <Link to={'/kozmetik/goz-makyaji'}><span className={'button'}>Göz Makyajı</span></Link>
+                            <Link to={'/kozmetik/ten-makyaji'}><span className={'button'}>Ten Makyajı</span></Link>
                         </div>
                         <div>
                             <span className={'subtitle'}>Saç Bakımı</span>
-                            <span className={'button'}>Şampuan</span>
-                            <span className={'button'}>Saç Kremi</span>
+                            <Link to={'/kozmetik/sampuan'}><span className={'button'}>Şampuan</span></Link>
+                            <Link to={'/kozmetik/sac-kremi'}><span className={'button'}>Saç Kremi</span></Link>
                         </div>
                     </div>
                     <div>
                         <img src="https://picsum.photos/200/300" alt="menu3"/>
                     </div>
                 </div>
+            </div>
+            <div className={'route-outlet'}>
+                <Outlet />
             </div>
         </section>
     );
