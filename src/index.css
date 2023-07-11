@@ -1,0 +1,62 @@
+body {
+  font-family: Verdana, sa;
+}
+.menu-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: aliceblue;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-main > span {
+  margin-right: 1rem;
+  font-weight: bolder;
+}
+
+.menu-tabs {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  margin-bottom: 20rem;
+}
+
+.menu-tabs > div {
+  display: none;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.menu-tabs > div > div {
+  display: flex;
+  justify-content: start;
+}
+
+.menu-tabs > div > div > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.menu-tabs > div > div > div > span {
+  margin-bottom: 2rem;
+}
+
+.button {
+  margin-bottom: 1rem !important;
+}
+
+.button:hover {
+  color: deeppink;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-weight: bold;
+}
