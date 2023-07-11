@@ -1,4 +1,4 @@
-export default function SacKremi()
+export default function Sampuan()
 {
-    return 'Saç Kremi'
+    return 'Şampuan'
 }
